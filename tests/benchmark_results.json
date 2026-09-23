@@ -1,0 +1,50 @@
+{
+  "env": {
+    "python": "3.11.7",
+    "platform": "win32"
+  },
+  "bptree": {
+    "rows": 20000,
+    "insert_throughput_ops_s": 557630,
+    "point_lookup_throughput_ops_s": 780202,
+    "range_scan_rows_s": 6730834,
+    "delete_throughput_ops_s": 676617,
+    "tree_depth_at_peak": 4
+  },
+  "sql_single": {
+    "rows": 20000,
+    "insert_rows_s": 12992,
+    "point_selects_s": 9129,
+    "aggregate_ms": 836.476,
+    "aggregate_result": [
+      20000,
+      399980000,
+      19999.0,
+      0,
+      39998
+    ],
+    "update_5k_rows_ms": 768.9,
+    "order_limit_ms": 592.41
+  },
+  "concurrency": {
+    "threads": 16,
+    "rows": 5000,
+    "total_ops": 4800,
+    "throughput_ops_s": 2040,
+    "elapsed_s": 2.35,
+    "latency_ms_p50": 0.224,
+    "latency_ms_p95": 31.542,
+    "latency_ms_p99": 37.466,
+    "conflict_aborts": 0
+  },
+  "many_txns": {
+    "concurrent_transactions": 1000,
+    "elapsed_s": 0.268
+  },
+  "wal": {
+    "fsync_commit_ms": 2.8,
+    "writer_rows_s": 17,
+    "reads_during_writes": 6324,
+    "read_p95_ms": 8.078
+  }
+}
