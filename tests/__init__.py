@@ -1,0 +1,1 @@
+"""minidb test suite."""
